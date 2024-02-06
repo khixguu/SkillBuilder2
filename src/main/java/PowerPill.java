@@ -9,30 +9,57 @@
  */
 public class PowerPill
 {
-    // TODO - replace this line with instruction from step 1
+    final public static int DEFAULT_POWER = 10;
 
     // instance variables
-    // TODO - replace this line with instruction from step 2
-    // TODO - replace this line with instruction from step 3
+    int power;
 
     // constructors
+    String name;
 
-    // TODO - replace this line with instruction from step 4
+    public PowerPill(String name)
+    {
+        this.name = name;
+        power = DEFAULT_POWER;
+    }
 
-    // TODO - replace this line with instruction from step 5
+    public PowerPill(String name, int power)
+    {
+        this.name = name;
+        this.power = power;
+    }
 
 
     // accessor methods
 
-    // TODO - replace this line with instruction from step 6
+    public int getPower()
+    {
+        return power;
+    }
 
+    public String getName()
+    {
+        return name;
+    }
 
     // mutator methods
 
-    // TODO - replace this line with instruction from step 7
+    public void setPower(int power)
+    {
+        this.power = power;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
     // toString method
 
-    // TODO - replace this line with instruction from step 8
+    @Override
+    public String toString()
+    {
+        return "PowerPill " + name + " = " + power; // string has to look like this <name> = <power>
 
+    }
 }
